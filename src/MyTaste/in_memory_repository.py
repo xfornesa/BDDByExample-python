@@ -1,0 +1,2 @@
+class InMemoryRepository(list):
+    pass

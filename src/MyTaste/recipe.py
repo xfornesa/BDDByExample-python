@@ -5,4 +5,3 @@ class Recipe(object):
     @classmethod
     def titled(cls, title):
         return Recipe(title)
-

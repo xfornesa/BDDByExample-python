@@ -3,10 +3,11 @@ from MyTaste.cookbook import *
 from MyTaste.recipe import *
 from MyTaste.user import *
 
+
 use_step_matcher("parse")
 
 
-@given('exists a user named "{user_name:w}" who owns a cookbook named "{cookbook_name:w}"')
+@given('exists a user named "{user_name}" who owns a cookbook named "{cookbook_name}"')
 def step_impl(context, user_name, cookbook_name):
     """
     :type context behave.runner.Context
@@ -32,7 +33,7 @@ def step_impl(context, recipe_title, user_name, cookbook_name):
     """
     :type context behave.runner.Context
     """
-    user = context.users[0]
+    # user = context.users[0]
     recipe = context.recipes[0]
     cookbook = context.cookbooks[0]
     cookbook.add_recipe(recipe)
@@ -43,7 +44,7 @@ def step_impl(context, user_name, cookbook_name, recipe_title):
     """
     :type context behave.runner.Context
     """
-    user = context.users[0]
+    # user = context.users[0]
     recipe = context.recipes[0]
     cookbook = context.cookbooks[0]
 
