@@ -1,6 +1,6 @@
 # BDD by example - python version
 
-Kata of behaviour driven development in python.
+Kata of behaviour driven development and domain driven design in python.
 The feature to implement was "save_recipe"
 
 ```Cucumber
